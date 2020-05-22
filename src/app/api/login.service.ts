@@ -11,6 +11,6 @@ export class LoginService {
     username: string,
     password: string
   }): Observable<boolean> {
-    return this.http.post<boolean>('/api/login', {});
+    return this.http.post<boolean>('/api/login', user);
   }
 }
