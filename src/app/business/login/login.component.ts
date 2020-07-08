@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/api/login.service';
 
 @Component({
@@ -13,6 +13,7 @@ export class LoginComponent {
   constructor(
     private loginSrvc: LoginService,
     private router: Router,
+
   ) {
 
   }
@@ -22,11 +23,12 @@ export class LoginComponent {
   });
   onSubmit() {
     this.formGroup.disable();
-    this.loginSrvc.login( this.formGroup.value ).subscribe({
-      next : () => {
+    this.loginSrvc.login(this.formGroup.value).subscribe({
+      next: () => {
         this.router.navigateByUrl('home');
-      }, error: err => {
-        console.log('失败');
+      },
+      error: err => {
+        console.log(err.error.message);
       }
     }
     );
