@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { MainPageRoutingModule } from './main-page-routing.module';
 import { MainPageComponent } from './main-page.component';
-import { NbLayoutModule, NbCardModule, NbSidebarModule, NbMenuModule } from '@nebular/theme';
+import { NbLayoutModule, NbCardModule, NbSidebarModule, NbMenuModule, NbActionsModule } from '@nebular/theme';
+import { TwoSevenModule } from 'src/app/two-seven/two-seven.module';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { NbLayoutModule, NbCardModule, NbSidebarModule, NbMenuModule } from '@ne
     NbLayoutModule,
     NbCardModule,
     NbSidebarModule,
-    NbMenuModule
+    NbMenuModule,
+    NbActionsModule,
+    TwoSevenModule
   ]
 })
 export class MainPageModule { }

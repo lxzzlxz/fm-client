@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: 'mainPage',
     component: MainPageComponent
+  },
+  {
+    path: 'chart',
+    loadChildren: () => import('../home/home.module').then(m => m.HomeModule)
   }
 ];
 
