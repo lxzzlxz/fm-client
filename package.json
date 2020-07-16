@@ -19,6 +19,7 @@
     "@angular/forms": "~9.1.6",
     "@angular/platform-browser": "~9.1.6",
     "@angular/platform-browser-dynamic": "~9.1.6",
+    "@angular/platform-server": "^10.0.3",
     "@angular/router": "~9.1.6",
     "@nebular/eva-icons": "^5.0.0",
     "@nebular/theme": "^5.0.0",
@@ -32,7 +33,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.5",
     "@angular/cli": "~9.1.5",
-    "@angular/compiler-cli": "~9.1.6",
+    "@angular/compiler-cli": "^9.1.12",
     "@schematics/angular": "~9.1.5",
     "@types/echarts": "^4.6.3",
     "@types/jasmine": "~3.5.0",
