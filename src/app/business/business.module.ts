@@ -14,6 +14,7 @@ import { TwoSevenModule } from '../two-seven/two-seven.module';
     BusinessRoutingModule,
     NbMenuModule,
     TwoSevenModule,
-  ]
+  ],
+  exports: [BusinessComponent]
 })
 export class BusinessModule { }

@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbSidebarModule, NbMenuItem, NbMenuModule } from '@nebular/theme';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './auth/auth.interceptor';
-import { LoginModule } from './business/login/login.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [

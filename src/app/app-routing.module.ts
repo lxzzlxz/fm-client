@@ -6,11 +6,7 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'business/login'
-  },
-  {
-    path: 'business',
-    loadChildren: () => import('./business/business.module').then(m => m.BusinessModule)
+    redirectTo: 'login'
   }
 ];
 
