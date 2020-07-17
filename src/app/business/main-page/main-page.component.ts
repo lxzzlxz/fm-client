@@ -11,14 +11,20 @@ export class MainPageComponent {
     {
       title: 'home',
       link: 'as',
-      icon: 'cube-outline',
+      icon: 'home-outline',
+    },
+    {
+      title: '系统功能',
+      group: true
     },
     {
       title: 'dashboard',
+      icon: 'file-text-outline',
       expanded: true,
       children: [
         {
           title: '疫情图',
+          link: '/chart',
           icon: 'activity-outline',
         },
         {

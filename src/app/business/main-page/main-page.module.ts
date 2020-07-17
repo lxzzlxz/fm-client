@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { MainPageRoutingModule } from './main-page-routing.module';
 import { MainPageComponent } from './main-page.component';
 import { NbLayoutModule, NbCardModule, NbSidebarModule, NbMenuModule, NbActionsModule } from '@nebular/theme';
-import { TwoSevenModule } from 'src/app/two-seven/two-seven.module';
 
 
 @NgModule({
@@ -19,7 +18,6 @@ import { TwoSevenModule } from 'src/app/two-seven/two-seven.module';
     NbSidebarModule,
     NbMenuModule,
     NbActionsModule,
-    TwoSevenModule
   ]
 })
 export class MainPageModule { }

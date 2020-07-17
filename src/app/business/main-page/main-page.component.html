@@ -1,4 +1,9 @@
-<two-seven>
-    <nb-menu [items]="items"></nb-menu>
-    <router-outlet></router-outlet>
-</two-seven>
+<nb-layout>
+    <nb-layout-header fixed></nb-layout-header>
+    <nb-sidebar>
+        <nb-menu [items]="items"></nb-menu>
+    </nb-sidebar>
+    <nb-layout-column>
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+</nb-layout>
