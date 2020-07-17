@@ -4,6 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    loadChildren: './business.module#BusinessModule'
+  },
+  {
     path: 'login',
     loadChildren: './login/login.module#LoginModule'
   },
@@ -14,7 +18,7 @@ const routes: Routes = [
   {
     path: 'mainPage',
     loadChildren: './main-page/main-page.module#MainPageModule'
-  }
+  },
 ];
 
 @NgModule({

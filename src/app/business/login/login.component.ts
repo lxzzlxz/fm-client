@@ -13,7 +13,6 @@ export class LoginComponent {
   constructor(
     private loginSrvc: LoginService,
     private router: Router,
-
   ) {
 
   }
@@ -25,7 +24,7 @@ export class LoginComponent {
     this.formGroup.disable();
     this.loginSrvc.login(this.formGroup.value).subscribe({
       next: () => {
-        this.router.navigate(['mainPage']);
+        this.router.navigate(['home'], {replaceUrl: true});
       },
       error: err => {
         console.log(err.error.message);
