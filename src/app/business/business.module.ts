@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { BusinessRoutingModule } from './business-routing.module';
 import { BusinessComponent } from './business.component';
-import { NbLayoutModule, NbSidebarModule, NbMenuModule } from '@nebular/theme';
-
-
-
+import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
+import { NbMenuModule } from '@nebular/theme';
+import { BaseComponent } from './base/base.component';
 
 @NgModule({
   imports: [
@@ -16,6 +15,7 @@ import { NbLayoutModule, NbSidebarModule, NbMenuModule } from '@nebular/theme';
     NbLayoutModule,
     NbSidebarModule,
   ],
-  declarations: [BusinessComponent],
+  declarations: [BusinessComponent, BaseComponent],
+  entryComponents: [BaseComponent],
 })
 export class BusinessModule { }

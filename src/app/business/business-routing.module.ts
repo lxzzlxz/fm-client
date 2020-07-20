@@ -13,12 +13,8 @@ const routes: Routes = [
         path: 'home',
         loadChildren: './home/home.module#HomeModule'
       },
-      {
-        path: 'base',
-        loadChildren: './base/base.module#BaseModule'
-      }
     ]
-  }
+  },
 ];
 
 @NgModule({

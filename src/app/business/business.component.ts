@@ -4,7 +4,6 @@ import { NbMenuItem } from '@nebular/theme';
 @Component({
   selector: 'app-business',
   templateUrl: './business.component.html',
-  styleUrls: ['./business.component.scss']
 })
 export class BusinessComponent {
   menu: NbMenuItem[] = [
@@ -29,6 +28,7 @@ export class BusinessComponent {
         },
         {
           title: '专家分析',
+          link: '/professional',
           icon: 'people-outline'
         }
       ]

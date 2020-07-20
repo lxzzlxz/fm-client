@@ -21,7 +21,7 @@ import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbSidebarModule.forRoot(),
-    NbMenuModule.forRoot(),
+    // NbMenuModule.forRoot(),
     LoginModule,
     NbAuthModule.forRoot({
       strategies: [
