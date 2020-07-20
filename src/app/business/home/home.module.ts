@@ -28,6 +28,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbEvaIconsModule,
     NbIconModule,
     NbSidebarModule,
-  ]
+  ],
+  exports: [HomeComponent]
 })
 export class HomeModule { }
