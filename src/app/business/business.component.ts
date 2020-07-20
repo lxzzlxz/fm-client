@@ -9,7 +9,7 @@ export class BusinessComponent {
   menu: NbMenuItem[] = [
     {
       title: 'home',
-      link: 'as',
+      link: '/',
       icon: 'home-outline',
     },
     {

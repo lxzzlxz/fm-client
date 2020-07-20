@@ -4,6 +4,7 @@ import { BusinessComponent } from './business.component';
 import { AuthGuard } from '../auth/auth.guard';
 import { LoginComponent } from '../login/login.component';
 import { HomeComponent } from './home/home.component';
+import { ProfessionalComponent } from './professional/professional.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
         path: 'home',
         component: HomeComponent
       },
+      {
+        path: 'professional',
+        loadChildren: () => import('./professional/professional.module').then(m => m.ProfessionalModule)
+      }
     ]
   },
 ];
