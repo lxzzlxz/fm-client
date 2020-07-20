@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
-import { TwoSevenComponent } from './two-seven.component';
+import { CommonModule } from '@angular/common';
+import { TwoSevenComponent } from './two-seven.layout';
 import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 
+
+
 @NgModule({
-  declarations: [
-    TwoSevenComponent
-  ],
+  declarations: [TwoSevenComponent],
   imports: [
+    CommonModule,
     NbLayoutModule,
     NbSidebarModule,
+    TwoSevenModule
   ],
-  exports: [
-    TwoSevenComponent
-  ],
+  exports: [TwoSevenComponent]
 })
 export class TwoSevenModule { }
