@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NbMenuItem, NbMenuService } from '@nebular/theme';
+import { NbMenuItem } from '@nebular/theme';
 
 @Component({
   selector: 'app-business',
@@ -46,7 +46,4 @@ export class BusinessComponent {
       ]
     }
   ];
-  constructor(
-    private menuService: NbMenuService
-  ) {}
 }

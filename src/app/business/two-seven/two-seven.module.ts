@@ -3,15 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TwoSevenComponent } from './two-seven.layout';
 import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 
-
-
 @NgModule({
   declarations: [TwoSevenComponent],
   imports: [
     CommonModule,
     NbLayoutModule,
     NbSidebarModule,
-    TwoSevenModule
   ],
   exports: [TwoSevenComponent]
 })
