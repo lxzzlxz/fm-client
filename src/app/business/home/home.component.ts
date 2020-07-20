@@ -3,7 +3,6 @@ import { NbSearchService } from '@nebular/theme';
 import * as echarts from 'echarts';
 import { HttpClient } from '@angular/common/http';
 import 'echarts/map/js/china.js';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,9 +13,6 @@ export class HomeComponent implements OnInit {
   value = '';
   @ViewChild('chartMap')
   chartMap: ElementRef; // 获取DOM节点的对象
-
-
-
   option = {
     title: {
       top: 10,
@@ -118,7 +114,6 @@ export class HomeComponent implements OnInit {
       this.value = data.term;
     });
   }
-
   ngOnInit() {
     const ec = echarts as any;
     this.initCharts();
@@ -127,7 +122,6 @@ export class HomeComponent implements OnInit {
   initCharts() {
     const ec = echarts as any;
     const lineChart = ec.init(document.getElementById('lineChart'));
-
     const lineChartOption = {
       title: {
         text: 'ECharts 折线图'
@@ -152,8 +146,6 @@ export class HomeComponent implements OnInit {
         text: 'ECharts 扇形图'
       },
       tooltip: {},
-
-
       series: [{
         type: 'pie',
         data: [
@@ -162,7 +154,6 @@ export class HomeComponent implements OnInit {
         ]
       }]
     };
-
     mychart2.setOption(option2);
   }
 }

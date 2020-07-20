@@ -6,17 +6,17 @@ import { LoginComponent } from '../login/login.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'login',
     component: LoginComponent
   },
   {
-    path: 'login',
+    path: '',
     component: BusinessComponent,
     canActivateChild: [AuthGuard],
     children: [
       {
         path: 'home',
-        loadChildren: './home/home.module#HomeModule'
+        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
     ]
   },
