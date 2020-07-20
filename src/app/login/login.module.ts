@@ -6,12 +6,9 @@ import { LoginComponent } from './login.component';
 import { NbLayoutModule, NbCardModule, NbSidebarModule, NbFormFieldModule, NbInputModule, NbButtonModule, NbDialogModule } from '@nebular/theme';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeModule } from '../business/home/home.module';
-import { BusinessComponent } from '../business/business.component';
-
-
 
 @NgModule({
-  declarations: [LoginComponent, BusinessComponent],
+  declarations: [LoginComponent],
   imports: [
     CommonModule,
     LoginRoutingModule,
@@ -25,6 +22,5 @@ import { BusinessComponent } from '../business/business.component';
     NbButtonModule,
     NbDialogModule,
   ],
-  entryComponents: [BusinessComponent]
 })
 export class LoginModule { }

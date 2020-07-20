@@ -15,7 +15,7 @@ import { BaseComponent } from './base/base.component';
     NbLayoutModule,
     NbSidebarModule,
   ],
+  exports: [BaseComponent],
   declarations: [BusinessComponent, BaseComponent],
-  entryComponents: [BaseComponent],
 })
 export class BusinessModule { }
