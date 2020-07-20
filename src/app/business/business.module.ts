@@ -6,7 +6,6 @@ import { BusinessComponent } from './business.component';
 import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 import { NbMenuModule } from '@nebular/theme';
 import { BaseComponent } from './base/base.component';
-import { NbMenuInternalService } from '@nebular/theme/components/menu/menu.service';
 
 @NgModule({
   imports: [

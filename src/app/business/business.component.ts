@@ -28,6 +28,7 @@ export class BusinessComponent {
         },
         {
           title: '专家分析',
+          link: '/professional',
           icon: 'people-outline'
         }
       ]
