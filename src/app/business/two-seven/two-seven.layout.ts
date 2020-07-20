@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './two-seven.layout.html',
   styleUrls: ['./two-seven.layout.scss']
 })
-export class TwoSevenComponent {
-  constructor() { }
-}
+export class TwoSevenComponent {}

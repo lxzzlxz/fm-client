@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NbMenuItem } from '@nebular/theme';
+import { NbMenuItem, NbMenuService } from '@nebular/theme';
 
 @Component({
   selector: 'app-business',
@@ -7,7 +7,7 @@ import { NbMenuItem } from '@nebular/theme';
   styleUrls: ['./business.component.scss']
 })
 export class BusinessComponent {
-  items: NbMenuItem[] = [
+  menu: NbMenuItem[] = [
     {
       title: 'home',
       link: 'as',
@@ -46,5 +46,7 @@ export class BusinessComponent {
       ]
     }
   ];
-  constructor() {}
+  constructor(
+    private menuService: NbMenuService
+  ) {}
 }
