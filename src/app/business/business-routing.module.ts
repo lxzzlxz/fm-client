@@ -1,15 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BusinessComponent } from './business.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: './home/home.module#HomeModule'
-  },
-  {
-    path: 'mainPage',
-    loadChildren: './main-page/main-page.module#MainPageModule'
-  },
+    path: '',
+    component: BusinessComponent,
+    children: [
+      {
+        path: 'home',
+        loadChildren: './home/home.module#HomeModule'
+      },
+      {
+        path: 'mainPage',
+        loadChildren: './main-page/main-page.module#MainPageModule'
+      },
+    ]
+  }
 ];
 
 @NgModule({

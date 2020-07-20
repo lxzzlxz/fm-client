@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BusinessRoutingModule } from './business-routing.module';
@@ -8,13 +8,12 @@ import { TwoSevenModule } from '../two-seven/two-seven.module';
 
 
 @NgModule({
-  declarations: [BusinessComponent],
   imports: [
-    CommonModule,
     BusinessRoutingModule,
+    CommonModule,
     NbMenuModule,
-    TwoSevenModule,
+    TwoSevenModule
   ],
-  exports: [BusinessComponent]
+  declarations: [BusinessComponent],
 })
 export class BusinessModule { }

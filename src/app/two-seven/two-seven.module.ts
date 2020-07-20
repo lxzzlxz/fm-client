@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { TwoSevenComponent } from './two-seven.layout';
+import { TwoSevenComponent } from './two-seven.component';
 import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
 
 @NgModule({
@@ -12,6 +12,6 @@ import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
   ],
   exports: [
     TwoSevenComponent
-  ]
+  ],
 })
 export class TwoSevenModule { }

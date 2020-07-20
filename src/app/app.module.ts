@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbSidebarModule, NbMenuItem, NbMenuModule } from '@nebular/theme';
+import { NbThemeModule, NbSidebarModule, NbMenuModule } from '@nebular/theme';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { LoginModule } from './login/login.module';
+import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +23,14 @@ import { LoginModule } from './login/login.module';
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
     LoginModule,
+    NbAuthModule.forRoot({
+      strategies: [
+        NbPasswordAuthStrategy.setup({
+          name: 'email',
+        }),
+      ],
+      forms: {},
+    }),
     HttpClientModule,
   ],
   providers: [

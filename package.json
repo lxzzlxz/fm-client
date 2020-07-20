@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/platform-server": "^10.0.3",
     "@angular/router": "~9.1.6",
+    "@nebular/auth": "^5.1.0",
     "@nebular/eva-icons": "^5.0.0",
     "@nebular/theme": "^5.0.0",
     "echarts": "^4.8.0",
