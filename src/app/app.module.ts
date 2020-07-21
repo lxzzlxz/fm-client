@@ -10,6 +10,7 @@ import { AuthInterceptor } from './auth/auth.interceptor';
 import { LoginModule } from './login/login.module';
 import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
 import { BusinessModule } from './business/business.module';
+import { ServiceModule } from './@core/service/service.module';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { BusinessModule } from './business/business.module';
       forms: {},
     }),
     HttpClientModule,
+    ServiceModule.forRoot('/'),
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true},

@@ -1,11 +1,11 @@
 import { OnDestroy } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { DataChange } from './data-change';
-import { DataInterface, DataGetInterface, DataCreateInterface } from './data-interface';
+import { DataChange } from './data/data-change';
 import { HttpClient } from '@angular/common/http';
 import { Constructor } from '@angular/cdk/table';
-import { ServerService } from './server.service';
+import { ServerService } from './service/server.service';
 import { tap } from 'rxjs/operators';
+import { DataGetInterface, DataCreateInterface, DataInterface } from './data/data-interface';
 
 export function restApi<T>(path: string): RestApiBuilder<T> {
     return new RestApiBuilder<T>(path);
