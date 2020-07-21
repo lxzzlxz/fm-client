@@ -10,7 +10,9 @@ import {
   NbLayoutModule,
   NbUserModule,
   NbIconModule,
-  NbSidebarModule
+  NbSidebarModule,
+  NbButtonModule,
+  NbPopoverModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
@@ -28,6 +30,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbEvaIconsModule,
     NbIconModule,
     NbSidebarModule,
+    NbButtonModule,
+    NbPopoverModule,
   ],
   exports: [HomeComponent]
 })

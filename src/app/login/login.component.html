@@ -1,37 +1,35 @@
-<nb-layout>
-  <nb-layout-column>
-    <div class="header">
-      <img src="/assets/log.jpg" height="928px" width="100%" />
-      <div class="user-info">
-        <nb-flip-card class="preface">
-          <nb-card-front>
-            <nb-card>
-              <nb-card-body>
-                <h5 style="text-align: center;">秋风不渡</h5>
-              </nb-card-body>
-            </nb-card>
-          </nb-card-front>
-          <nb-card-back>
-            <nb-card>
-              <nb-card-body>
-                <h5>踩好脚下，才有资格去品诗和远方！</h5>
-              </nb-card-body>
-            </nb-card>
-          </nb-card-back>
-        </nb-flip-card>
-        <nb-card>
-          <nb-card-body style="opacity:0.9;">
-            <form [formGroup]=formGroup (ngSubmit)="onSubmit()">
-              <input nbInput type="text" formControlName="username" placeholder="用户名" fullWidth fieldSize="giant"
-                required shape="semi-round" spellcheck="false" />
-              <input nbInput type="password" placeholder="密码" formControlName="password" fullWidth fieldSize="giant"
-                required shape="semi-round" spellcheck="false" />
-              <button nbButton status="primary" [disabled]="!formGroup.valid" size="giant" fullWidth shape="semi-round"
-                spellcheck="false">登录</button>
-            </form>
-          </nb-card-body>
-        </nb-card>
-      </div>
-    </div>
-  </nb-layout-column>
-</nb-layout>
+  <nb-layout>
+    <nb-layout-column>
+      <!-- <img src="/assets/timg.jpg"/> -->
+        <div class="user-info">
+          <nb-flip-card style="opacity: 0.4;">
+            <nb-card-front>
+              <nb-card>
+                <nb-card-body>
+                  <h5 style="text-align: center;">所爱隔山海~</h5>
+                </nb-card-body>
+              </nb-card>
+            </nb-card-front>
+            <nb-card-back>
+              <nb-card>
+                <nb-card-body>
+                  <h5 style="text-align: center;">山海皆可平！</h5>
+                </nb-card-body>
+              </nb-card>
+            </nb-card-back>
+          </nb-flip-card>
+          <nb-card>
+            <nb-card-body style="opacity:0.9;">
+              <form [formGroup]=formGroup (ngSubmit)="onSubmit()">
+                <input nbInput type="text" formControlName="username" placeholder="用户名" fullWidth fieldSize="giant"
+                  required shape="semi-round" spellcheck="false" />
+                <input nbInput type="password" placeholder="密码" formControlName="password" fullWidth fieldSize="giant"
+                  required shape="semi-round" spellcheck="false" />
+                <button nbButton status="primary" [disabled]="!formGroup.valid" size="giant" fullWidth
+                  shape="semi-round" spellcheck="false">登录</button>
+              </form>
+            </nb-card-body>
+          </nb-card>
+        </div>
+    </nb-layout-column>
+  </nb-layout>

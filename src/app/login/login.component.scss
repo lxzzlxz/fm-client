@@ -2,14 +2,11 @@ form {
   text-align: -webkit-center;
   & > input {
     display: block;
-    margin-top: 10px;
+    margin-top: 2rem;
   }
   & > button {
     margin-top: 2rem;
   }
-}
-.header {
-  position: relative;
 }
 .user-info {
   position: absolute;
@@ -21,7 +18,3 @@ form {
   align-items: center;
   opacity: 0.9;
 }
-.preface {
-  opacity: 0.4;
-}
-
